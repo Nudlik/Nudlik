@@ -5,7 +5,7 @@
 
 
 ### <div align="center">Мой набор навыков</div>
-<table style="border: 10px ridge black;">
+<table border="10">
 <td valign="top" width="20%">
 
 ### Frontend  
@@ -40,7 +40,7 @@
 
 
 ### <div align="center">Краткая статистика по репозиторию</div>
-<table style="border: 10px ridge black;">
+<table border="10">
   <tr>
     <td valign="top" width="35%">
       <div align="center">
