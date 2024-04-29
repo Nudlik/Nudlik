@@ -5,7 +5,7 @@
 
 
 ### <div align="center">Мой набор навыков</div>
-<table border="10">
+<table style="border: 10px ridge black;">
 <td valign="top" width="20%">
 
 ### Frontend  
@@ -40,15 +40,15 @@
 
 
 ### <div align="center">Краткая статистика по репозиторию</div>
-<table border="10">
+<table style="border: 10px ridge black;">
   <tr>
     <td valign="top" width="35%">
       <div align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nudlik&hide_border=true&layout=compact" align="center"  alt=":("/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nudlik&hide_border=true&layout=compact&theme=dark" align="center"  alt=":("/>
       </div>
     </td>
     <td valign="top" width="68%">
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nudlik"  alt=":("/>
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nudlik&theme=dark"  alt=":("/>
     </td>
   </tr>
 </table>
