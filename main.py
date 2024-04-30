@@ -28,11 +28,9 @@ def download_screenshots(browser_name, folder_img, data):
 def refactor_screenshots(folder_img, data):
     for item in data:
         path = os.path.join(folder_img, item['file_name'])
-        img = Image.open(path)
-        cropped_img = img.crop(item['coords'])
-        cropped_img.save(os.path.join(folder_img, 'result_' + item['file_name']))
-        img.close()
-        cropped_img.close()
+        with Image.open(path) as img:
+            with img.crop(item['coords']) as cropped_img:
+                cropped_img.save(os.path.join(folder_img, 'result_' + item['file_name']))
 
 
 if __name__ == '__main__':
