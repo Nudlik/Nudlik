@@ -36,6 +36,7 @@ class ScreenShot(IScreenShot):
         self.driver.quit()
 
     def get_driver(self):
+        # TODO: тут пока не факт что на виртуальной машине гитхаба браузер откроется в нормальном разрешении
         web_drivers = {
             'firefox': webdriver.Firefox,
             'chrome': webdriver.Chrome,

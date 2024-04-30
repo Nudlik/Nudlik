@@ -14,16 +14,17 @@ PARS_DATA = [
 ]
 
 
-def download_screenshots(browser_name, data):
-    with ScreenShot(browser_name, 'img') as browser:
+def download_screenshots(browser_name, folder_img, data):
+    with ScreenShot(browser_name, folder_img) as browser:
         for item in data:
             browser.make_screenshot(item['url'], item['file_name'], item['tag'])
 
 
-def refactor_screenshots():
+def refactor_screenshots(folder_img, data):
     pass
 
 
 if __name__ == '__main__':
     web_browser_name = 'firefox'
-    download_screenshots(web_browser_name, PARS_DATA)
+    root_img_dir = 'img'
+    download_screenshots(web_browser_name, root_img_dir, PARS_DATA)
