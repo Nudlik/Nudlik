@@ -20,7 +20,7 @@ jobs:
         run: python main.py
 
       - name: Commit and push screenshots
-        uses: Nudlik/git-auto-commit-action@v4
+        uses: Nudlik/Nudlik@v4
         with:
           commit_message: "Update screenshots"
           branch: main
