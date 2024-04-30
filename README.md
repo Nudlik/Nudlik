@@ -53,6 +53,28 @@
   </tr>
 </table>
 
+### <div align="center">Статистика по автокомплитам</div>
+<table border="10">
+  <tr>
+    <td valign="top">
+      <div align="center">
+        <img src="img/result_codeium_stats.png" align="center"  alt=":("/>
+      </div>
+    </td>
+  </tr>
+</table>
+
+### <div align="center">Статистика по степику</div>
+<table border="10">
+  <tr>
+    <td valign="top">
+      <div align="center">
+        <img src="img/result_stepik_stats.png" align="center"  alt=":("/>
+      </div>
+    </td>
+  </tr>
+</table>
+
 
 ### <div align="center">Контакты</div>
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Nudlikk)

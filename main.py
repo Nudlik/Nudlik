@@ -14,7 +14,7 @@ PARS_DATA = [
         'url': 'https://codeium.com/profile/nudlik',
         'file_name': 'codeium_stats.png',
         'tag': 'body',
-        'coords': (457, 434, 1164, 560)
+        'coords': (457, 426, 1164, 560)
     }
 ]
 
