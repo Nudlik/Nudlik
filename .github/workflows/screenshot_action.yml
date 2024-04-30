@@ -8,8 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
 
@@ -18,9 +21,6 @@ jobs:
 
       - name: Run script
         run: python main.py
-
-      - name: Checkout repo
-        uses: actions/checkout@v4
 
       - name: Commit and push screenshots
         run: |
