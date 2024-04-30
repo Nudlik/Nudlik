@@ -5,10 +5,10 @@
 
 
 ### <div align="center">Мой набор навыков</div>
-<table border="10">
+<table border="10" style="max-width: 800px">
 <td valign="top" width="20%">
 
-### Frontend  
+### <div align="center">Frontend</div> 
 <div align="center">
   <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" /></a>  
   <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
@@ -17,7 +17,7 @@
 
 <td valign="top" width="50%">
 
-### Backend  
+### <div align="center">Backend</div>
 <div align="center">  
   <a href="https://www.linux.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/linux-original.svg" alt="Linux" height="50" /></a>  
   <a href="https://www.nginx.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nginx-original.svg" alt="Nginx" height="50" /></a>  
@@ -40,7 +40,7 @@
 
 
 ### <div align="center">Краткая статистика по репозиторию</div>
-<table border="10">
+<table border="10" style="max-width: 800px;">
   <tr>
     <td valign="top" width="35%">
       <div align="center">
@@ -54,7 +54,7 @@
 </table>
 
 ### <div align="center">Статистика по автокомплитам</div>
-<table border="10">
+<table border="10" style="max-width: 800px">
   <tr>
     <td valign="top">
       <div align="center">
@@ -65,7 +65,7 @@
 </table>
 
 ### <div align="center">Статистика по степику</div>
-<table border="10">
+<table border="10" style="max-width: 800px">
   <tr>
     <td valign="top">
       <div align="center">
