@@ -36,7 +36,7 @@ def refactor_screenshots(folder_img, data):
 
 
 if __name__ == '__main__':
-    web_browser_name = 'firefox'
+    web_browser_name = 'Firefox'
     root_img_dir = 'img'
     download_screenshots(web_browser_name, root_img_dir, PARS_DATA)
     refactor_screenshots(root_img_dir, PARS_DATA)

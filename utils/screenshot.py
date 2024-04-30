@@ -10,18 +10,18 @@ from selenium.webdriver.support.wait import WebDriverWait
 class IScreenShot(ABC):
 
     @abstractmethod
-    def make_screenshot(self, url, screen_name, tag):
+    def make_screenshot(self, url: str, screen_name: str, tag: str) -> None:
         pass
 
 
 class ScreenShot(IScreenShot):
 
-    def __init__(self, browser_name: str, screen_root_dir: str):
+    def __init__(self, browser_name: str, screen_root_dir: str) -> None:
         self.browser_name = browser_name.lower()
         self.driver = None
         self.screen_root_dir = screen_root_dir
 
-    def make_screenshot(self, url, screen_name, tag):
+    def make_screenshot(self, url: str, screen_name: str, tag: str) -> None:
         assert self.driver is not None, 'Browser is not open, use context manager to open it'
         self.driver.get(url)
         wait = WebDriverWait(self.driver, 10)
@@ -29,7 +29,7 @@ class ScreenShot(IScreenShot):
         self.driver.save_screenshot(os.path.join(self.screen_root_dir, screen_name))
 
     def __enter__(self):
-        self.driver = self.get_driver
+        self.driver = self.get_driver()
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
@@ -41,4 +41,4 @@ class ScreenShot(IScreenShot):
             'firefox': webdriver.Firefox,
             'chrome': webdriver.Chrome,
         }
-        return web_drivers.get(self.browser_name)
+        return web_drivers.get(self.browser_name)()
