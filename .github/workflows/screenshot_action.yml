@@ -15,18 +15,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: 3.11
+        run: python -m pip install --upgrade pip setuptools wheel
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run script
         run: python main.py
-
-      - name: Commit and push screenshots
-        run: |
-          pwd
-#          git config --global user.email ${{ secrets.GH_EMAIL }}
-#          git config --global user.name ${{ secrets.GH_NAME }}
-#          git add img/
-#          git commit -m "Add screenshots"
-#          git push
