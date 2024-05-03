@@ -1,4 +1,5 @@
 import os.path
+import time
 from abc import ABC, abstractmethod
 
 from selenium import webdriver
@@ -26,6 +27,7 @@ class ScreenShot(IScreenShot):
         self.driver.get(url)
         wait = WebDriverWait(self.driver, 10)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, tag)))
+        time.sleep(10)  # костыль, почему-то удаленно не срабатывает
         self.driver.save_screenshot(os.path.join(self.screen_root_dir, screen_name))
 
     def __enter__(self):

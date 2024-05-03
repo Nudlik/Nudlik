@@ -16,7 +16,7 @@ PARS_DATA = [
         'file_name': 'codeium_stats.png',
         'tag': 'body',
         # 'coords': (457, 426, 1164, 560)  # local
-        'coords': (0, 0, 2000, 2000)  # remote
+        'coords': (304, 435, 955, 558)  # remote
     }
 ]
 
