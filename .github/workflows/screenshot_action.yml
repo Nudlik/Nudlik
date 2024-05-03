@@ -18,15 +18,21 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pwd
+          dir
           python -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
 
       - name: Run python script
-        run: python main.py
+        run: |
+          pwd
+          dir
+          python main.py
 
       - name: Commit and push screenshots
         run: |
           pwd
+          dir
           git config --global user.email ${{ secrets.GH_EMAIL }}
           git config --global user.name ${{ secrets.GH_NAME }}
           git add img/
