@@ -8,13 +8,15 @@ PARS_DATA = [
         'url': 'https://stepik.org/users/564742454/',
         'file_name': 'stepik_stats.png',
         'tag': '.cal-heatmap-container',
-        'coords': (398, 189, 1152, 451)
+        # 'coords': (398, 189, 1152, 451)  # local
+        'coords': (0, 0, 2000, 2000)  # remote
     },
     {
         'url': 'https://codeium.com/profile/nudlik',
         'file_name': 'codeium_stats.png',
         'tag': 'body',
-        'coords': (457, 426, 1164, 560)
+        # 'coords': (457, 426, 1164, 560)  # local
+        'coords': (0, 0, 2000, 2000)  # remote
     }
 ]
 

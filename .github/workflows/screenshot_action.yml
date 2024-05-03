@@ -18,18 +18,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pwd
-          dir
           python -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
 
       - name: Run python script
         run: |
-          pwd
-          dir
           python main.py
-          pwd
-          dir
 
       - name: Commit and push screenshots
         run: |
