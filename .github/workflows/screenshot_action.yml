@@ -28,6 +28,8 @@ jobs:
           pwd
           dir
           python main.py
+          pwd
+          dir
 
       - name: Commit and push screenshots
         run: |
@@ -38,3 +40,5 @@ jobs:
           git add img/
           git commit -m "Upload screenshots"
           git push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
