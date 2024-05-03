@@ -3,6 +3,7 @@ import time
 from abc import ABC, abstractmethod
 
 from selenium import webdriver
+from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -25,8 +26,11 @@ class ScreenShot(IScreenShot):
     def make_screenshot(self, url: str, screen_name: str, tag: str) -> None:
         assert self.driver is not None, 'Browser is not open, use context manager to open it'
         self.driver.get(url)
-        wait = WebDriverWait(self.driver, 10)
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, tag)))
+        try:
+            wait = WebDriverWait(self.driver, 10)
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, tag)))
+        except TimeoutException:
+            time.sleep(10)
         self.driver.save_screenshot(os.path.join(self.screen_root_dir, screen_name))
 
     def __enter__(self):
