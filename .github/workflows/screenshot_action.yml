@@ -32,6 +32,7 @@ jobs:
           git add img/result_codeium_stats.png
           git add img/result_stepik_stats.png
           git commit -m "Upload screenshots"
+          git pull
           git push
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
