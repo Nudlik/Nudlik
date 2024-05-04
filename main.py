@@ -2,23 +2,30 @@ import os
 
 import PIL
 
-from config.settings import PARS_DATA
-from utils.images import Images
-from utils.osi import OSI
+from config.settings import PARS_DATA, WEB_BROWSER_NAME, IMG_DIR
+from utils.imageadapter import ImageAdapter
+from utils.osadapter import OSAdapter
 from utils.runner import Runner
 from utils.screenshot import ScreenShot
 
 
 def main() -> None:
-    web_browser_name = 'Firefox'
-    root_img_dir = 'img'
     runner = Runner(
-        screenshot_interface=ScreenShot(web_browser_name, root_img_dir),
-        image_interface=Images(open_provider=PIL.Image.open),
-        os_interface=OSI(os),
+        screenshot_interface=ScreenShot(
+            browser_name=WEB_BROWSER_NAME,
+            screen_root_dir=IMG_DIR
+        ),
+        image_interface=ImageAdapter(
+            open_provider=PIL.Image.open
+        ),
+        os_interface=OSAdapter(
+            os=os,
+            folder_img=IMG_DIR,
+            prefix_result_img='result_',
+        ),
+        data=PARS_DATA,
     )
-    runner.download_screenshots(web_browser_name, root_img_dir, PARS_DATA)
-    runner.refactor_screenshots(root_img_dir, PARS_DATA)
+    runner.run()
 
 
 if __name__ == '__main__':

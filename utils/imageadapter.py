@@ -11,5 +11,5 @@ class ImageInterface(ABC):
 
 
 @dataclass
-class Images(ImageInterface, Image):
+class ImageAdapter(ImageInterface, Image):
     open_provider: PIL.Image.open

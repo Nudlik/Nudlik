@@ -15,3 +15,7 @@ PARS_DATA = [
         'coords_remote': (304, 435, 955, 558),
     }
 ]
+
+# настройки браузера и папок для сейва
+WEB_BROWSER_NAME = 'Firefox'
+IMG_DIR = 'img'

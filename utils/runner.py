@@ -1,8 +1,9 @@
 from abc import abstractmethod, ABC
 from dataclasses import dataclass
 
-from utils.images import ImageInterface, Images
-from utils.osi import OSInterface, OSI
+from utils.enum_parse_data import EnumParseData
+from utils.imageadapter import ImageInterface, ImageAdapter
+from utils.osadapter import OSInterface, OSAdapter
 from utils.screenshot import ScreenShotInterface, ScreenShot
 
 
@@ -16,24 +17,39 @@ class RunnerInterface(ABC):
     def run(self):
         pass
 
+    @abstractmethod
+    def download_screenshots(self, data: [EnumParseData]) -> None:
+        pass
+
+    @abstractmethod
+    def refactor_screenshots(self, data: [EnumParseData]) -> None:
+        pass
+
 
 @dataclass(eq=False)
 class Runner(RunnerInterface):
     screenshot_interface: ScreenShot
-    image_interface: Images
-    os_interface: OSI
+    image_interface: ImageAdapter
+    os_interface: OSAdapter
+
+    data: list[dict,]
 
     def run(self):
-        pass
+        data = self.dict_to_enum()
+        self.download_screenshots(data)
+        self.refactor_screenshots(data)
 
-    def download_screenshots(self, browser_name, folder_img, data):
+    def download_screenshots(self, data: [EnumParseData]) -> None:
         with self.screenshot_interface as browser:
             for item in data:
-                browser.make_screenshot(item['url'], item['file_name'], item['tag'])
+                browser.make_screenshot(item.url, item.file_name, item.tag)
 
-    def refactor_screenshots(self, folder_img, data):
+    def refactor_screenshots(self, data: [EnumParseData]) -> None:
         for item in data:
-            path = self.os_interface.os.path.join(folder_img, item['file_name'])
+            path = self.os_interface.join_folder_img(item.file_name)
             with self.image_interface.open_provider(path) as img:
-                with img.crop(item['coords_local']) as cropped_img:
-                    cropped_img.save(self.os_interface.os.path.join(folder_img, 'result_' + item['file_name']))
+                with img.crop(item.coords_local) as cropped_img:
+                    cropped_img.save(self.os_interface.join_result_img(item.file_name))
+
+    def dict_to_enum(self) -> [EnumParseData]:
+        return [EnumParseData(**item) for item in self.data]
