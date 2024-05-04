@@ -5,13 +5,13 @@ import PIL
 from PIL.Image import Image
 
 
-@dataclass
+@dataclass(eq=False)
 class ImageInterface(ABC):
     """ Интерфейс для работы с изображениями """
     open_provider: None
 
 
-@dataclass
+@dataclass(eq=False)
 class ImageAdapter(ImageInterface, Image):
     """ Класс адаптер для работы с изображениями """
     open_provider: PIL.Image.open

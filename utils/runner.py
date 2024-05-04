@@ -48,7 +48,7 @@ class Runner(RunnerInterface):
     def download_screenshots(self, data: [EnumParseData]) -> None:
         with self.screenshot_interface as browser:
             for item in data:
-                browser.make_screenshot(item.url, item.file_name, item.tag)
+                browser.make_screenshot(item.url, self.os_interface, item.file_name, item.tag)
 
     def refactor_screenshots(self, data: [EnumParseData]) -> None:
         for item in data:
