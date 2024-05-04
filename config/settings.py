@@ -19,3 +19,5 @@ PARS_DATA = [
 # настройки браузера и папок для сейва
 WEB_BROWSER_NAME = 'Firefox'
 IMG_DIR = 'img'
+
+REMOTE = False

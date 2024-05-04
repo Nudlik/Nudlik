@@ -33,6 +33,7 @@ class Runner(RunnerInterface):
     os_interface: OSAdapter
 
     data: list[dict,]
+    REMOTE: bool
 
     def run(self):
         data = self.dict_to_enum()
@@ -48,7 +49,8 @@ class Runner(RunnerInterface):
         for item in data:
             path = self.os_interface.join_folder_img(item.file_name)
             with self.image_interface.open_provider(path) as img:
-                with img.crop(item.coords_local) as cropped_img:
+                cords = item.coords_remote if self.REMOTE else item.coords_local
+                with img.crop(cords) as cropped_img:
                     cropped_img.save(self.os_interface.join_result_img(item.file_name))
 
     def dict_to_enum(self) -> [EnumParseData]:

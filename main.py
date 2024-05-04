@@ -2,7 +2,7 @@ import os
 
 import PIL
 
-from config.settings import PARS_DATA, WEB_BROWSER_NAME, IMG_DIR
+from config.settings import PARS_DATA, WEB_BROWSER_NAME, IMG_DIR, REMOTE
 from utils.imageadapter import ImageAdapter
 from utils.osadapter import OSAdapter
 from utils.runner import Runner
@@ -24,6 +24,7 @@ def main() -> None:
             prefix_result_img='result_',
         ),
         data=PARS_DATA,
+        REMOTE=REMOTE,
     )
     runner.run()
 
