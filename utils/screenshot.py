@@ -33,7 +33,7 @@ class ScreenShot(ScreenShotInterface):
             wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, tag)))
         except TimeoutException:
             time.sleep(10)
-        self.driver.save_screenshot(os_interface.join_folder_img(screen_name))
+        self.driver.save_full_page_screenshot(os_interface.join_folder_img(screen_name))
 
     def __enter__(self):
         self.driver = self.get_driver()
