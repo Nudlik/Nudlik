@@ -12,10 +12,18 @@ from utils.screenshot import ScreenShot
 def main() -> None:
     """ Точка входа в программу """
 
-    screenshot_interface = ScreenShot(WEB_BROWSER_NAME)
-    image_interface = ImageAdapter(PIL.Image.open)
-    os_interface = OSAdapter(os, IMG_DIR, 'result_')
-
+    screenshot_interface = ScreenShot(
+        browser_name=WEB_BROWSER_NAME,
+        window_size=(1280, 1000),
+    )
+    image_interface = ImageAdapter(
+        open_provider=PIL.Image.open,
+    )
+    os_interface = OSAdapter(
+        os=os,
+        folder_img=IMG_DIR,
+        prefix_result_img='result_',
+    )
     runner = Runner(
         screenshot_interface=screenshot_interface,
         image_interface=image_interface,

@@ -4,6 +4,7 @@ from abc import ABC, abstractmethod
 from selenium import webdriver
 from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -21,9 +22,10 @@ class ScreenShotInterface(ABC):
 
 class ScreenShot(ScreenShotInterface):
 
-    def __init__(self, browser_name: str) -> None:
-        self.browser_name = browser_name.lower()
-        self.driver = None
+    def __init__(self, browser_name: str, window_size: tuple[int, int]) -> None:
+        self.browser_name: str = browser_name.lower()
+        self.window_size = window_size
+        self.driver: WebDriver | None = None
 
     def make_screenshot(self, url: str, os_interface: OSAdapter, screen_name: str, tag: str) -> None:
         assert self.driver is not None, 'Browser is not open, use context manager to open it'
@@ -37,6 +39,7 @@ class ScreenShot(ScreenShotInterface):
 
     def __enter__(self):
         self.driver = self.get_driver()
+        self.driver.set_window_size(*self.window_size)
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
