@@ -10,9 +10,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 class ScreenShotInterface(ABC):
+    """ Интерфейс для работы с браузером """
 
     @abstractmethod
     def make_screenshot(self, url: str, screen_name: str, tag: str) -> None:
+        """ Сделать скриншот страницы """
         pass
 
 
@@ -41,7 +43,7 @@ class ScreenShot(ScreenShotInterface):
         self.driver.quit()
 
     def get_driver(self):
-        # TODO: тут пока не факт что на виртуальной машине гитхаба браузер откроется в нормальном разрешении
+        """ Выбираем драйвер браузера по названию """
         web_drivers = {
             'firefox': webdriver.Firefox,
             'chrome': webdriver.Chrome,

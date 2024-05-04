@@ -20,4 +20,5 @@ PARS_DATA = [
 WEB_BROWSER_NAME = 'Firefox'
 IMG_DIR = 'img'
 
+# выбираем по каким координатам будет обрезать скриншот
 REMOTE = False

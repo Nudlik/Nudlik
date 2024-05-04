@@ -9,20 +9,25 @@ from utils.screenshot import ScreenShotInterface, ScreenShot
 
 @dataclass(eq=False)
 class RunnerInterface(ABC):
+    """ Интерфейс для запуска программы """
+
     screenshot_interface: ScreenShotInterface
     image_interface: ImageInterface
     os_interface: OSInterface
 
     @abstractmethod
     def run(self):
+        """ Запуск программы """
         pass
 
     @abstractmethod
     def download_screenshots(self, data: [EnumParseData]) -> None:
+        """ Загрузка скриншотов """
         pass
 
     @abstractmethod
     def refactor_screenshots(self, data: [EnumParseData]) -> None:
+        """ Рефактор скриншотов """
         pass
 
 
@@ -54,4 +59,5 @@ class Runner(RunnerInterface):
                     cropped_img.save(self.os_interface.join_result_img(item.file_name))
 
     def dict_to_enum(self) -> [EnumParseData]:
+        """ Преобразование словарей в Enum для удобства обращения """
         return [EnumParseData(**item) for item in self.data]

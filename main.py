@@ -10,6 +10,8 @@ from utils.screenshot import ScreenShot
 
 
 def main() -> None:
+    """ Точка входа в программу """
+
     runner = Runner(
         screenshot_interface=ScreenShot(
             browser_name=WEB_BROWSER_NAME,
