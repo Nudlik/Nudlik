@@ -9,14 +9,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class IScreenShot(ABC):
+class ScreenShotInterface(ABC):
 
     @abstractmethod
     def make_screenshot(self, url: str, screen_name: str, tag: str) -> None:
         pass
 
 
-class ScreenShot(IScreenShot):
+class ScreenShot(ScreenShotInterface):
 
     def __init__(self, browser_name: str, screen_root_dir: str) -> None:
         self.browser_name = browser_name.lower()

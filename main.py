@@ -1,42 +1,25 @@
-import os.path
+import os
 
+import PIL
+
+from config.settings import PARS_DATA
+from utils.images import Images
+from utils.osi import OSI
+from utils.runner import Runner
 from utils.screenshot import ScreenShot
-from PIL import Image
-
-PARS_DATA = [
-    {
-        'url': 'https://stepik.org/users/564742454/',
-        'file_name': 'stepik_stats.png',
-        'tag': '.cal-heatmap-container',
-        # 'coords': (398, 189, 1152, 451)  # local
-        'coords': (0, 0, 2000, 2000)  # remote
-    },
-    {
-        'url': 'https://codeium.com/profile/nudlik',
-        'file_name': 'codeium_stats.png',
-        'tag': 'body',
-        # 'coords': (457, 426, 1164, 560)  # local
-        'coords': (304, 435, 955, 558)  # remote
-    }
-]
 
 
-def download_screenshots(browser_name, folder_img, data):
-    with ScreenShot(browser_name, folder_img) as browser:
-        for item in data:
-            browser.make_screenshot(item['url'], item['file_name'], item['tag'])
-
-
-def refactor_screenshots(folder_img, data):
-    for item in data:
-        path = os.path.join(folder_img, item['file_name'])
-        with Image.open(path) as img:
-            with img.crop(item['coords']) as cropped_img:
-                cropped_img.save(os.path.join(folder_img, 'result_' + item['file_name']))
+def main() -> None:
+    web_browser_name = 'Firefox'
+    root_img_dir = 'img'
+    runner = Runner(
+        screenshot_interface=ScreenShot(web_browser_name, root_img_dir),
+        image_interface=Images(open_provider=PIL.Image.open),
+        os_interface=OSI(os),
+    )
+    runner.download_screenshots(web_browser_name, root_img_dir, PARS_DATA)
+    runner.refactor_screenshots(root_img_dir, PARS_DATA)
 
 
 if __name__ == '__main__':
-    web_browser_name = 'Firefox'
-    root_img_dir = 'img'
-    download_screenshots(web_browser_name, root_img_dir, PARS_DATA)
-    refactor_screenshots(root_img_dir, PARS_DATA)
+    main()
