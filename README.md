@@ -1,10 +1,10 @@
-### <div align="center">Привет, меня зовут Егор👋</div>
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&random=false&width=435&lines=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C+%D0%BC%D0%B5%D0%BD%D1%8F+%D0%B7%D0%BE%D0%B2%D1%83%D1%82+%D0%95%D0%B3%D0%BE%D1%80%F0%9F%91%8B)](https://git.io/typing-svg)
 - Я программирую на Python
 - Начал заниматься программированием в начале 2023 г.
 - Нравиться заниматься самообучением, онлайн сертификаты тут [Stepik](https://stepik.org/users/564742454/profile)
 
 
-### <div align="center">Мой набор навыков</div>
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%9C%D0%BE%D0%B9+%D0%BD%D0%B0%D0%B1%D0%BE%D1%80+%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%D0%BE%D0%B2)](https://git.io/typing-svg)
 <table border="10" style="max-width: 800px">
 <td valign="top" width="20%">
 
@@ -39,7 +39,7 @@
 </table>
 
 
-### <div align="center">Краткая статистика по репозиторию</div>
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%9A%D1%80%D0%B0%D1%82%D0%BA%D0%B0%D1%8F+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%BE+%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8E)](https://git.io/typing-svg)
 <table border="10" style="max-width: 800px;">
   <tr>
     <td valign="top" width="35%">
@@ -53,29 +53,29 @@
   </tr>
 </table>
 
-### <div align="center">Статистика по автокомплитам</div>
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%BE+%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B8%D1%82%D0%B0%D0%BC)](https://git.io/typing-svg)
 <table border="10" style="max-width: 800px">
   <tr>
     <td valign="top">
       <div align="center">
-        <img src="img/result_codeium_stats.png" align="center"  alt=":("/>
+        <img src="img/result_codeium_stats.png" align="center"  alt="https://codeium.com/profile/nudlik"/>
       </div>
     </td>
   </tr>
 </table>
 
-### <div align="center">Статистика по степику</div>
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%BE+%D1%81%D1%82%D0%B5%D0%BF%D0%B8%D0%BA%D1%83)](https://git.io/typing-svg)
 <table border="10" style="max-width: 800px">
   <tr>
     <td valign="top">
       <div align="center">
-        <img src="img/result_stepik_stats.png" align="center"  alt=":("/>
+        <img src="img/result_stepik_stats.png" align="center"  alt="https://stepik.org/users/564742454/"/>
       </div>
     </td>
   </tr>
 </table>
 
 
-### <div align="center">Контакты</div>
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B)](https://git.io/typing-svg)
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Nudlikk)
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/7769)
