@@ -17,11 +17,7 @@
 <table border="10" style="max-width: 800px" align="center">
 <td valign="top" width="20%">
 
-<div align="center">
-  <h3>
-    <p style="color: #F7B24EFF">Frontend</p>
-  </h3>
-</div> 
+### <div align="center" style="color: #F7B24EFF">Frontend</div>
 <div align="center">
   <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" /></a>  
   <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
