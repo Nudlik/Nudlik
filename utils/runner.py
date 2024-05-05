@@ -11,9 +11,9 @@ from utils.screenshot import ScreenShotInterface, ScreenShot
 class RunnerInterface(ABC):
     """ Интерфейс для запуска программы """
 
-    screenshot_interface: ScreenShotInterface
-    image_interface: ImageInterface
-    os_interface: OSInterface
+    screenshot_service: ScreenShotInterface
+    image_service: ImageInterface
+    os_service: OSInterface
 
     @abstractmethod
     def run(self):
@@ -33,9 +33,9 @@ class RunnerInterface(ABC):
 
 @dataclass(eq=False)
 class Runner(RunnerInterface):
-    screenshot_interface: ScreenShot
-    image_interface: ImageAdapter
-    os_interface: OSAdapter
+    screenshot_service: ScreenShot
+    image_service: ImageAdapter
+    os_service: OSAdapter
 
     data: list[dict,]
     REMOTE: bool
@@ -46,17 +46,17 @@ class Runner(RunnerInterface):
         self.refactor_screenshots(data)
 
     def download_screenshots(self, data: [EnumParseData]) -> None:
-        with self.screenshot_interface as browser:
+        with self.screenshot_service as browser:
             for item in data:
-                browser.make_screenshot(item.url, self.os_interface, item.file_name, item.tag)
+                browser.make_screenshot(item.url, self.os_service, item.file_name, item.tag)
 
     def refactor_screenshots(self, data: [EnumParseData]) -> None:
         for item in data:
-            path = self.os_interface.join_folder_img(item.file_name)
-            with self.image_interface.open_provider(path) as img:
+            path = self.os_service.join_folder_img(item.file_name)
+            with self.image_service.open_provider(path) as img:
                 cords = item.coords_remote if self.REMOTE else item.coords_local
                 with img.crop(cords) as cropped_img:
-                    cropped_img.save(self.os_interface.join_result_img(item.file_name))
+                    cropped_img.save(self.os_service.join_result_img(item.file_name))
 
     def dict_to_enum(self) -> [EnumParseData]:
         """ Преобразование словарей в Enum для удобства обращения """

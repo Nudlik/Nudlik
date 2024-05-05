@@ -2,7 +2,7 @@ import os
 
 import PIL
 
-from config.settings import PARS_DATA, WEB_BROWSER_NAME, IMG_DIR, REMOTE
+from config.settings import PARS_DATA, WEB_BROWSER_NAME, IMG_DIR, REMOTE, WEB_BROWSER_WINDOW_SIZE
 from utils.imageadapter import ImageAdapter
 from utils.osadapter import OSAdapter
 from utils.runner import Runner
@@ -12,22 +12,22 @@ from utils.screenshot import ScreenShot
 def main() -> None:
     """ Точка входа в программу """
 
-    screenshot_interface = ScreenShot(
+    screenshot_service = ScreenShot(
         browser_name=WEB_BROWSER_NAME,
-        window_size=(1280, 1000),
+        window_size=WEB_BROWSER_WINDOW_SIZE,
     )
-    image_interface = ImageAdapter(
+    image_service = ImageAdapter(
         open_provider=PIL.Image.open,
     )
-    os_interface = OSAdapter(
+    os_service = OSAdapter(
         os=os,
         folder_img=IMG_DIR,
         prefix_result_img='result_',
     )
     runner = Runner(
-        screenshot_interface=screenshot_interface,
-        image_interface=image_interface,
-        os_interface=os_interface,
+        screenshot_service=screenshot_service,
+        image_service=image_service,
+        os_service=os_service,
         data=PARS_DATA,
         REMOTE=REMOTE,
     )
