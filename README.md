@@ -14,10 +14,14 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%9C%D0%BE%D0%B9+%D0%BD%D0%B0%D0%B1%D0%BE%D1%80+%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%D0%BE%D0%B2" alt="Typing SVG" />
   </a>
 </div>
-<table border="10" style="max-width: 800px">
+<table border="10" style="max-width: 800px" align="center">
 <td valign="top" width="20%">
 
-### <div align="center" style="color: #F7B24EFF">Frontend</div> 
+<div align="center">
+  <h3>
+    <p style="color: #F7B24EFF">Frontend</p>
+  </h3>
+</div> 
 <div align="center">
   <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" /></a>  
   <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
@@ -52,7 +56,7 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%BE+%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8E" alt="Typing SVG" />
   </a>
 </div>
-<table border="10" style="max-width: 800px;">
+<table border="10" style="max-width: 800px;" align="center">
   <tr>
     <td valign="top" width="35%">
       <div align="center">
@@ -70,7 +74,7 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%BE+%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D0%BE%D0%BC%D0%BB%D0%B8%D1%82%D0%B0%D0%BC" alt="Typing SVG" />
   </a>
 </div>
-<table border="10" style="max-width: 800px">
+<table border="10" style="max-width: 800px" align="center">
   <tr>
     <td valign="top">
       <div align="center">
@@ -85,7 +89,7 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%BE+Stepik" alt="Typing SVG" />
   </a>
 </div>
-<table border="10" style="max-width: 800px">
+<table border="10" style="max-width: 800px" align="center">
   <tr>
     <td valign="top">
       <div align="center">
