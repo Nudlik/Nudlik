@@ -66,36 +66,6 @@
 </table>
 
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%BE+%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D0%BE%D0%BC%D0%BB%D0%B8%D1%82%D0%B0%D0%BC" alt="Typing SVG" />
-  </a>
-</div>
-<table border="10" style="max-width: 800px" align="center">
-  <tr>
-    <td valign="top">
-      <div align="center">
-        <img src="img/result_codeium_stats.png" align="center"  alt="https://codeium.com/profile/nudlik"/>
-      </div>
-    </td>
-  </tr>
-</table>
-
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%BE+Stepik" alt="Typing SVG" />
-  </a>
-</div>
-<table border="10" style="max-width: 800px" align="center">
-  <tr>
-    <td valign="top">
-      <div align="center">
-        <img src="img/result_stepik_stats.png" align="center"  alt="https://stepik.org/users/564742454/"/>
-      </div>
-    </td>
-  </tr>
-</table>
-
-<div align="center">
  <a href="https://git.io/typing-svg">
    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&pause=1000&color=F7B24E&center=true&vCenter=true&repeat=false&random=false&width=435&lines=%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B" alt="Typing SVG" />
  </a>
